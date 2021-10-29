@@ -184,3 +184,43 @@ Received Import Request.
 Start importing Assets/Shaders/Rim Light.shadergraph using Guid(a96d0f191ff1d7d4a8685369a7a74046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e445ff0891d5ce5fbc17b95b3123038') in 0.025441 seconds 
   Import took 0.029456 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 747.864967 seconds.
+  path: Assets/Scripts/LineSegment2DSDF.shader
+  artifactKey: Guid(abaa1983ee8599649a83e109f377c09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LineSegment2DSDF.shader using Guid(abaa1983ee8599649a83e109f377c09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c20b7f1df86aef0b5128ab31af0a71') in 0.009808 seconds 
+  Import took 0.014242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.042859 seconds.
+  path: Assets/Scripts/SimpleCameraController.cs
+  artifactKey: Guid(be76e5f14cfee674cb30b491fb72b09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SimpleCameraController.cs using Guid(be76e5f14cfee674cb30b491fb72b09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f43657664d19fbc476a42e0fad91a9') in 0.009779 seconds 
+  Import took 0.013862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 173.648639 seconds.
+  path: Assets/Shaders/New Shader Graph.shadergraph
+  artifactKey: Guid(62a4bd8e35c255a4484b58e4a55ca46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(62a4bd8e35c255a4484b58e4a55ca46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df2551bd12ac0e9785b97c365a18a59') in 0.007030 seconds 
+  Import took 0.011246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.249045 seconds.
+  path: Assets/Shaders/NewSurfaceShader.shader
+  artifactKey: Guid(13fb46cd814c0f449b9208404120c171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/NewSurfaceShader.shader using Guid(13fb46cd814c0f449b9208404120c171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0165c660e5be36496a35ec35436bba') in 0.008082 seconds 
+  Import took 0.012424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 836.829980 seconds.
+  path: Assets/Shaders/Hologram.shader
+  artifactKey: Guid(807e874b4b32dd747b1a0e7643b84ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Hologram.shader using Guid(807e874b4b32dd747b1a0e7643b84ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f90b272b0105fe2cf83bb92a905824') in 0.006749 seconds 
+  Import took 0.011047 seconds .
+
