@@ -43,4 +43,5 @@ Material:
     - Color_5360ea2eb24b41f0bb6f0be729d3e35a: {r: 1, g: 0, b: 0, a: 1}
     - Vector2_0bb0b263c879494e85e0bb8ca06cee77: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_95c96369b76f467db7c7469b78ad5cf5: {r: 0, g: 1, b: 1, a: 1}
+    - _PointA: {r: -78.50139, g: 634.03143, b: 0, a: 0}
   m_BuildTextureStacks: []

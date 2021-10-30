@@ -17,7 +17,9 @@ public class MouseToMaterial : MonoBehaviour
     void Update()
     {
         mousePosition = Input.mousePosition;
-        materialVector = new Vector4(mousePosition.x, mousePosition.y, 0, 0);
+        mousePosition.z = Camera.main.farClipPlane;
+        Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePosition);
+        materialVector = new Vector4(worldPoint.x, worldPoint.y, 0, 0);
         material.SetVector(mousePositionProperty, materialVector);
     }
 }
