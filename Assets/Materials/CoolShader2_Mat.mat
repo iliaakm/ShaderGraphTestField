@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_CoolShader2
+  m_Name: CoolShader2_Mat
   m_Shader: {fileID: 4800000, guid: feafff6fe641d2543919a0937dc06c0e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -22,7 +22,7 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 2.32, y: -0.64}
     m_Floats: []
     m_Colors: []
   m_BuildTextureStacks: []
