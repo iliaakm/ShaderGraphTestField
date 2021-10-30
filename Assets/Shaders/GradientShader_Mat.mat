@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CoolShader2_Mat
-  m_Shader: {fileID: 4800000, guid: feafff6fe641d2543919a0937dc06c0e, type: 3}
+  m_Name: GradientShader_Mat
+  m_Shader: {fileID: 4800000, guid: 661ec3cbcb075a04a94b5c76be360813, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
