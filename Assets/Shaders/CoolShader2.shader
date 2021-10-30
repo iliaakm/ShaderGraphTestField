@@ -47,6 +47,7 @@ Shader "Unlit/CoolShader2"
 			fixed4 frag(v2f i) : SV_Target
 			{
 				float2 uv = i.uv;
+				uv -= float2(0.5, 0.5);
 
 				uv.y = 1.0 / abs(uv.y);
 				uv.x *= uv.y;
