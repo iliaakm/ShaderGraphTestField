@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_DrawLineDemo
-  m_Shader: {fileID: -6465566751694194690, guid: 149109f1645555b41986139acf5f9b05, type: 3}
+  m_Name: VertDisplacement_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 98ffa9d66bde684458eaddd56688d9a1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -36,12 +32,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_605c411fab1f432ea9fd3342a70a2314: 1
-    - Vector1_9afc3b0a8bd944cbaa03085b157d7e2e: 10
-    m_Colors:
-    - Color_41706805a533439b8840f63d248aa7d5: {r: 0.08611512, g: 1, b: 0, a: 1}
-    - Color_5360ea2eb24b41f0bb6f0be729d3e35a: {r: 1, g: 0, b: 0, a: 1}
-    - Vector2_0bb0b263c879494e85e0bb8ca06cee77: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_95c96369b76f467db7c7469b78ad5cf5: {r: 0, g: 1, b: 1, a: 1}
-    - _PointA: {r: -78.50139, g: 634.03143, b: 0, a: 0}
+    - _Amount: 0.541
+    m_Colors: []
   m_BuildTextureStacks: []
