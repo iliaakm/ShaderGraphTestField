@@ -3,6 +3,7 @@ Shader "Unlit/Screen Position"
     Properties
     {
         _MainTex("Texture", 2D) = "white" {}
+        _Size("Checkerboard Size", Range(0.0, 0.5)) = 0.5
     }
         SubShader
     {
@@ -31,6 +32,7 @@ Shader "Unlit/Screen Position"
             }
 
             sampler2D _MainTex;
+            float _Size;
 
             fixed4 frag(v2f i, UNITY_VPOS_TYPE screenPos : VPOS) : SV_Target
             {
@@ -40,7 +42,7 @@ Shader "Unlit/Screen Position"
 
                 // checker value will be negative for 4x4 blocks of pixels
                 // in a checkerboard pattern
-                screenPos.xy = floor(screenPos.xy * 0.25) * 0.5;
+                screenPos.xy = floor(screenPos.xy * _Size) * 0.5;
                 float checker = -frac(screenPos.r + screenPos.g);
 
                 // clip HLSL instruction stops rendering a pixel if value is negative
