@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 1892665634}
   - component: {fileID: 1892665636}
   m_Layer: 5
-  m_Name: Image
+  m_Name: LineDrawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 2ae15376c81132449ab404287ca495e2, type: 2}
+  m_Material: {fileID: 2100000, guid: 8e2bdf1484aa0bd45af1df8e92c35e6a, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -586,7 +586,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73daf607c9f82d841b46a2709d989a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 2ae15376c81132449ab404287ca495e2, type: 2}
+  material: {fileID: 2100000, guid: 8e2bdf1484aa0bd45af1df8e92c35e6a, type: 2}
   mousePositionProperty: _PointA
-  mousePosition: {x: 0, y: 0, z: 0}
-  materialVector: {x: 0, y: 0, z: 0, w: 0}
