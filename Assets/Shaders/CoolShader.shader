@@ -46,16 +46,11 @@ Shader "Unlit/CoolShader"
 
 			fixed4 frag(v2f i) : SV_Target
 			{
-				// sample the texture
-				fixed4 col = tex2D(_MainTex, i.uv);
+				float2 uv = i.uv;
+				uv = uv / dot(uv, uv) + _Time.y;
+				float4 fragColor = (uv.x, uv.y, uv.x, uv.y);
+				float4 col = sin(15.0 * fragColor);
 
-			float2 uv = i.uv;
-			uv = uv / dot(uv, uv) + _Time.y;
-			float4 fragColor = (uv.x, uv.y, uv.x, uv.y);
-			col = sin(9.0 * fragColor);
-
-			// apply fog
-			UNITY_APPLY_FOG(i.fogCoord, col);
 			return col;
 		}
 		ENDCG
