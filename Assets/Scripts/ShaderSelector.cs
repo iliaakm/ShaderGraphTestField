@@ -46,7 +46,8 @@ class ShaderSelectorEditor : Editor
         base.OnInspectorGUI();
 
         ShaderSelector shaderSelector = target as ShaderSelector;
-        
+
+        EditorGUILayout.LabelField("");
         index = EditorGUILayout.Popup("Select Shader to Display", index, shaderSelector.MaterialsNames);
         shaderSelector.DisplayMaterial(index);
     }
