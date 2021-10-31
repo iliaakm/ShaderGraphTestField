@@ -46,15 +46,13 @@ Shader "Unlit/CoolShader2"
 
 			fixed4 frag(v2f i) : SV_Target
 			{
-				float2 uv = i.uv;
-				uv -= float2(0.5, 0.5);
+				float2 uv = (2.0 * i.uv - 1) / 1;
 
 				uv.y = 1.0 / abs(uv.y);
 				uv.x *= uv.y;
 				uv.y += _Time.y;
 
-				float4 fragColor = (uv.x, uv.y, uv.x, uv.y);
-				float4 col = sin(9.0 * fragColor);
+				float4 col = sin(9.0 * uv.xyxy);
 
 			return col;
 		}
