@@ -511,7 +511,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ab11c9bbd8e2b694e99ebde4036afedb, type: 2}
   - {fileID: 2100000, guid: cc04617fe45609b44940a95720ac504f, type: 2}
   - {fileID: 2100000, guid: c7dd3368d00c7ad4b958a747213b25bd, type: 2}
-  - {fileID: 2100000, guid: 87d75283f17ef1c4394917aecbd57cfa, type: 2}
   targetRenderer: {fileID: 1717888938}
 --- !u!4 &1149180625
 Transform:
@@ -695,7 +694,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c7dd3368d00c7ad4b958a747213b25bd, type: 2}
+  - {fileID: 2100000, guid: 80d9c6f8fe277e34b911c8cb792e7397, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
