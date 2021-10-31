@@ -48,7 +48,6 @@ Shader "Unlit/GradientShader"
 			{
 				float2 uv = i.uv;
 				uv -= float2(0.5, 0.5);
-
 				float3 fragColor = 0.5 + 0.5 * cos(_Time + float3(uv.x, uv.y, uv.x) + float3(0, 2, 4));
 				float4 col = float4(fragColor.x, fragColor.y, fragColor.z, 1);
 
