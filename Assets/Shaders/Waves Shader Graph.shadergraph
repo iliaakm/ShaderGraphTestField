@@ -1758,7 +1758,7 @@
     "m_Guid": {
         "m_GuidSerialized": "30d482a4-3cba-4864-b3ed-b674336bc5e2"
     },
-    "m_Name": "Value",
+    "m_Name": "Amplitude",
     "m_DefaultReferenceName": "Vector1_7507ae1275ea48d880e6b1053b6c88bf",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2413,7 +2413,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "b8ba015718bf42218063f65e05fdf747",
     "m_Id": 0,
-    "m_DisplayName": "Value",
+    "m_DisplayName": "Amplitude",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

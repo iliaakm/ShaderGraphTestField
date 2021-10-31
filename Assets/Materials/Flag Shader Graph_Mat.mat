@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Waves Shader Graph_Mat
+  m_Name: Flag Shader Graph_Mat
   m_Shader: {fileID: -6465566751694194690, guid: 7eb86b0432b0fca489361b929934abda, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
