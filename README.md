@@ -1,5 +1,6 @@
 # ShaderGraphTestField
-Me playing with Shader Graph
+Me playing with Shader Graph.
+
 Most of shaders have external parameters, you could change them in realtime.
 ShaderShoroom scene can shange shader in editor whithout entering playmode.
 
