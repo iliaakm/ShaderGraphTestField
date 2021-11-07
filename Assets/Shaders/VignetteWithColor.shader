@@ -5,6 +5,7 @@ Shader "CustomPostProcess/VignetteWithColor"
         _MainTex ("Texture", 2D) = "white" {}
         _V_Radius("Vignette Radius", Range(0.0, 1.0)) = 1.0
         _VSoft("Vignette Softness", Range(0.0, 1.0)) = 0.5
+        _Color("Tone Color", Color) = (1, 1, 1, 1)
     }
     SubShader
     {
@@ -42,6 +43,7 @@ Shader "CustomPostProcess/VignetteWithColor"
             sampler2D _MainTex;
             float _V_Radius;
             float _VSoft;
+            float4 _Color;
 
             fixed4 frag (v2f i) : SV_Target
             {
@@ -50,6 +52,7 @@ Shader "CustomPostProcess/VignetteWithColor"
                 float distFromCenter = distance(i.uv.xy, float2(0.5, 0.5));
                 float vignette = smoothstep(_V_Radius, _V_Radius - _VSoft, distFromCenter);
                 col = saturate(col * vignette);
+                col = col * _Color;
 
                 return col;
             }
