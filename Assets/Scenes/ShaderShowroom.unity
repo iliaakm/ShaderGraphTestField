@@ -512,6 +512,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: cc04617fe45609b44940a95720ac504f, type: 2}
   - {fileID: 2100000, guid: c7dd3368d00c7ad4b958a747213b25bd, type: 2}
   - {fileID: 2100000, guid: ef3db5c5928e91d49966c9ce64cad9c0, type: 2}
+  - {fileID: 2100000, guid: 773d2242d566f4244a61c9bd8449d9c7, type: 2}
   targetRenderer: {fileID: 1717888938}
 --- !u!4 &1149180625
 Transform:
