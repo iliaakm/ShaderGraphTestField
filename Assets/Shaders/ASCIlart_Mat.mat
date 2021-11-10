@@ -19,10 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ASCIIAtlas:
+        m_Texture: {fileID: 2800000, guid: 3f460b2b2174ee945903364ea6f29c06, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - _CellHeight: 10
+    - _CellWidth: 10
+    - _Height: 768
+    - _Width: 1024
     m_Colors: []
   m_BuildTextureStacks: []
