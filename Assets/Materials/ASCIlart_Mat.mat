@@ -39,7 +39,7 @@ Material:
     - _CellWidth: 5
     - _Height: 1080
     - _PixelScale: 5
-    - _PixelSize: 5
+    - _PixelSize: 20
     - _Width: 1920
     m_Colors: []
   m_BuildTextureStacks: []
