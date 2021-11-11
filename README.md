@@ -11,4 +11,5 @@ ShaderShoroom scene can shange shader in editor whithout entering playmode.
 
 https://user-images.githubusercontent.com/25001991/139674115-e3d20227-196f-4fff-8b78-cd350da86d51.mp4
 
+https://user-images.githubusercontent.com/25001991/141380765-d3eafe08-259b-45f4-9e1c-b5fa0a8f484b.mp4
 
