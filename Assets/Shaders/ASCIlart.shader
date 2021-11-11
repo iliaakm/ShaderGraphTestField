@@ -68,7 +68,7 @@ Shader "Unlit/ASCIIart"
 
 					float offset = ceil(gray * 10.0) / 10.0;
 					float2 percentPosition = float2(pixelsIndex.x / (10 *_PixelSize) + offset,
-						pixelsIndex.y / _PixelSize);
+						pixelsIndex.y / (3 *_PixelSize));
 
 					return percentPosition;
 				}
@@ -82,7 +82,7 @@ Shader "Unlit/ASCIIart"
 
 					float2 asciiPos = getASCIIChar(pixelPos, col);
 
-					return tex2D(_ASCIIAtlas, asciiPos);
+					return tex2D(_ASCIIAtlas, asciiPos) * col;
 				}
 				ENDCG
 			}
