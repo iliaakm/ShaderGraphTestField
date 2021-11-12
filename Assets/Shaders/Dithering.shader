@@ -36,6 +36,7 @@ Shader "Unlit/Dithering"
             sampler2D _MainTex;
             float4 _MainTex_ST;
             sampler2D _PatternTex;
+            float4 _PatternTex_ST;
 
             v2f vert (appdata v)
             {
@@ -50,7 +51,7 @@ Shader "Unlit/Dithering"
             {
                 // sample the texture
                 fixed4 colScene = tex2D(_MainTex, i.uv);
-                fixed4 colPattern = tex2D(_PatternTex, i.uv);
+                fixed4 colPattern = tex2D(_PatternTex, i.uv * _PatternTex_ST);
                 float grayscaleScene = (colScene.r + colScene.g + colScene.b) / 3.0;
                 
                 float color = 0.0;
