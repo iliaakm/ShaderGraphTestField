@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 #if UNITY_EDITOR
@@ -12,7 +10,7 @@ public class ShaderSelector : MonoBehaviour
     private Material[] materials;
     [SerializeField]
     private Renderer targetRenderer;
-
+     
     public string[] MaterialsNames
     {
         get

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HoloGlitcher : MonoBehaviour
@@ -18,11 +17,11 @@ public class HoloGlitcher : MonoBehaviour
 
     private IEnumerator Start()
     {
-        while(true)
+        while (true)
         {
             float glitchTest = Random.Range(0f, 1f);
 
-            if(glitchTest <= glitchChance)
+            if (glitchTest <= glitchChance)
             {
                 StartCoroutine(Glitch());
             }
@@ -30,7 +29,7 @@ public class HoloGlitcher : MonoBehaviour
         }
     }
 
-    IEnumerator Glitch()
+    private IEnumerator Glitch()
     {
         glitchDuration = new WaitForSeconds(Random.Range(0.05f, 0.5f));
         holoRenderer.material.SetFloat("_Amount", 0.1f);

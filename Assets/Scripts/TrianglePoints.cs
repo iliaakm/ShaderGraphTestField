@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TrianglePoints : MonoBehaviour
@@ -11,14 +9,14 @@ public class TrianglePoints : MonoBehaviour
 
     private int nextPoint = 0;
 
-    void Start()
+    private void Start()
     {
         ResetMaterial();
     }
 
-    void Update()
+    private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = Camera.main.farClipPlane;
@@ -27,7 +25,7 @@ public class TrianglePoints : MonoBehaviour
             material.SetVector(pointPropertyNames[nextPoint], materialVector);
         }
 
-        if(Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0))
         {
             nextPoint = (nextPoint + 1) % pointPropertyNames.Length;
         }
@@ -38,7 +36,7 @@ public class TrianglePoints : MonoBehaviour
         ResetMaterial();
     }
 
-    void ResetMaterial()
+    private void ResetMaterial()
     {
         foreach (var property in pointPropertyNames)
         {

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseToMaterial : MonoBehaviour
@@ -15,7 +13,7 @@ public class MouseToMaterial : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = Camera.main.farClipPlane;
@@ -29,7 +27,7 @@ public class MouseToMaterial : MonoBehaviour
         ResetMaterial();
     }
 
-    void ResetMaterial()
+    private void ResetMaterial()
     {
         material.SetVector(mousePositionProperty, Vector4.zero);
     }
