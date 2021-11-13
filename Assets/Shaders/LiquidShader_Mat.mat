@@ -38,5 +38,5 @@ Material:
     - _WobbleZ: 0
     m_Colors:
     - Color_b02bb2982e4d428e8a5976eb783775fa: {r: 0.3486873, g: 1, b: 0, a: 0}
-    - Color_e915a8c5602c4e1686b009038b3f6c19: {r: 0.45058674, g: 0.7169812, b: 0.30776078, a: 1}
+    - Color_e915a8c5602c4e1686b009038b3f6c19: {r: 0.5301888, g: 1, b: 0.2783019, a: 1}
   m_BuildTextureStacks: []
