@@ -36,6 +36,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_7b7af43a62b0429bab3b6470429a129b: 0
+    - Vector1_7b7af43a62b0429bab3b6470429a129b: 1
     m_Colors: []
   m_BuildTextureStacks: []
