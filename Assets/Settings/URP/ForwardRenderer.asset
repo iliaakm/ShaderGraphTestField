@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467bbc2c832ef84cb566b78cf241959, type: 3}
   m_Name: Desaturate
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_Settings:
-    material: {fileID: 2100000, guid: 40fab29d554ac1549aa423b63b380c6d, type: 2}
-    materialPassIndex: -1
-    renderEvent: 300
+    material: {fileID: 2100000, guid: 524ae0e17251bc242be811eb1b3d8c2a, type: 2}
+    materialPassIndex: 0
+    renderEvent: 1000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
