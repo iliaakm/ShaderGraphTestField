@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.43387327, g: 0.4716981, b: 0.44143823, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientIntensity: 0.2
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 35659018a4a3ec145b07ffe22a72b16a, type: 2}
   m_HaloStrength: 0.5
@@ -163,14 +163,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561153408}
-  m_LocalRotation: {x: 0.41071886, y: -0, z: -0, w: 0.91176206}
-  m_LocalPosition: {x: 0.5999999, y: 40.91, z: -56.299995}
+  m_LocalRotation: {x: 0.4383711, y: 0, z: 0, w: 0.89879405}
+  m_LocalPosition: {x: 0.5999999, y: 54.98, z: -56.299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1333587285}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 48.5, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 52, y: 0, z: 0}
 --- !u!1 &754147274
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754147274}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 65.9, y: 85.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -274,7 +274,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1131482203}
   - component: {fileID: 1131482202}
-  - component: {fileID: 1131482201}
   - component: {fileID: 1131482200}
   m_Layer: 0
   m_Name: Snow Camera
@@ -316,14 +315,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1131482201
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131482199}
-  m_Enabled: 1
 --- !u!20 &1131482202
 Camera:
   m_ObjectHideFlags: 0
@@ -525,6 +516,7 @@ GameObject:
   - component: {fileID: 1539289377}
   - component: {fileID: 1539289376}
   - component: {fileID: 1539289375}
+  - component: {fileID: 1539289378}
   m_Layer: 0
   m_Name: Snow
   m_TagString: Untagged
@@ -595,6 +587,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1539289378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539289374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 17.73, z: 100}
+  m_Center: {x: 0, y: 1.04, z: 0}
 --- !u!1 &1668876854
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668876854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.813, z: 0.919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1333587285}
@@ -671,13 +676,13 @@ LineRenderer:
   - {x: 0, y: 0, z: 100}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 10
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.50510216
+        value: 0.010208713
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -689,8 +694,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.76964605, b: 0, a: 0.654902}
-      key1: {r: 1, g: 0.77647066, b: 0.023529414, a: 0.27450982}
+      key0: {r: 1, g: 0.76964605, b: 0, a: 1}
+      key1: {r: 1, g: 0.77647066, b: 0.023529414, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -713,7 +718,7 @@ LineRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 0
+      m_Mode: 1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -735,7 +740,6 @@ GameObject:
   - component: {fileID: 2026682366}
   - component: {fileID: 2026682365}
   - component: {fileID: 2026682364}
-  - component: {fileID: 2026682367}
   m_Layer: 6
   m_Name: VFXSnowPainter
   m_TagString: Untagged
@@ -803,7 +807,7 @@ VisualEffect:
       - m_Value: 50
         m_Name: Rate
         m_Overridden: 1
-      - m_Value: 10
+      - m_Value: 5
         m_Name: Size
         m_Overridden: 1
       - m_Value: 20
@@ -843,22 +847,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2026682367
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026682363}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5329e84fdf467c141b929037ea93a212, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
