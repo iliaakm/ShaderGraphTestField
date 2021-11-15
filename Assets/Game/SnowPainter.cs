@@ -9,13 +9,6 @@ public class SnowPainter : MonoBehaviour
     [SerializeField]
     GameObject snowPainterVFX;
 
-    Vector2 snowPainterAwayPoint = new Vector2(1000, 1000);
-
-    private void Start()
-    {
-        snowPainterVFX.transform.position = snowPainterAwayPoint;
-    }
-
     private void Update()
     {
         if(Input.GetMouseButton(0))
@@ -35,7 +28,11 @@ public class SnowPainter : MonoBehaviour
         if(Input.GetMouseButtonUp(0))
         {
             lineRenderer.enabled = false;
-            snowPainterVFX.transform.position = snowPainterAwayPoint;
         }
+    }
+
+    void HideSnowPainter()
+    {
+
     }
 }
