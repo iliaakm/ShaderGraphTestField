@@ -1,16 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PainterTrigger : MonoBehaviour
 {
     [SerializeField]
-    GameObject snowPainterVFX;
-    [SerializeField]
-    ParticleSystem jetParticle;
+    private GameObject snowPainterVFX;
 
-    List<ParticleCollisionEvent> collisionEvents;
+    [SerializeField]
+    private ParticleSystem jetParticle;
+
+    private List<ParticleCollisionEvent> collisionEvents;
 
     private void Start()
     {
@@ -22,5 +21,15 @@ public class PainterTrigger : MonoBehaviour
         jetParticle.GetCollisionEvents(other, collisionEvents);
 
         snowPainterVFX.transform.position = collisionEvents[collisionEvents.Count - 1].intersection;
+    }
+
+    public void JetOn()
+    {
+        jetParticle.Play();
+    }
+
+    public void JetOff()
+    {
+        jetParticle.Stop();
     }
 }
