@@ -19,13 +19,8 @@ public class PainterTrigger : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        int numCollisionEvents = jetParticle.GetCollisionEvents(other, collisionEvents);
+        jetParticle.GetCollisionEvents(other, collisionEvents);
 
-        int i = 0;
-        //while (i < numCollisionEvents)
-        {
-            snowPainterVFX.transform.position = collisionEvents[collisionEvents.Count-1].intersection;
-            i++;
-        }
+        snowPainterVFX.transform.position = collisionEvents[collisionEvents.Count - 1].intersection;
     }
 }
