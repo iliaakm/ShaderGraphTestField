@@ -50,13 +50,17 @@ Material:
     - _Amplitude: 3
     - _Edge_Blend: 0.5
     - _Effect_Radius: 306.67
-    - _Frequency: 0.5
+    - _Float: 1.15
+    - _Frequency: 1
     - _Gradient_Edge: 11.7
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RippleDensity: 0.5
+    - _RippleColorOffset: 0
+    - _RippleDensity: 1
     m_Colors:
     - _BaseColor: {r: 0.13782945, g: 0.5188679, b: 0.11992703, a: 0}
     - _GradientColor: {r: 1, g: 1, b: 1, a: 0}
+    - _RippleColor: {r: 0.10712119, g: 0.404, b: 0.09487877, a: 0}
     - _RippleOrigin: {r: 0, g: 273.3, b: 0, a: 0}
+    - _SineNoise: {r: -0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
